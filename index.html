@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet"      href="node_modules\bootstrap\dist\css\bootstrap.css"    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Color Flipper</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="random.html">Random</a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <div class="box p-3 bg-light rounded">
+        <h3>Background Color: <span id="color-text">White</span></h3>
+
+        <button class="btn btn-dark" onclick="clickMeButton()">Click Me</button>
+      </div>
+    </div>
+
+    <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
